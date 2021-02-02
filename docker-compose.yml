@@ -2,7 +2,7 @@ version: '3'
 services:
   proxy:
     image: nginx:latest   # 최신 버전의 Nginx 사용
-    container_name: proxy 
+    container_name: proxy # container 이름은 proxy
     ports: 
       - "80:80"           # 80번 포트를 host와 container 맵핑
     volumes:
@@ -16,5 +16,5 @@ services:
       - "3000"           # 다른 컨테이너에게 3000번 포트 open
     volumes:
       - ./source:/source # host <-> container의 source 디렉토리를 공유
-      - /source/node_modules 
+      - /source/node_modules # !!!!!!!! Dockerfile 설명에서 다시 설명합니다.
     restart: "unless-stopped"
