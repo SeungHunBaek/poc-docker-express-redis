@@ -1,0 +1,22 @@
+{
+  "name": "docker-express-redis",
+  "version": "1.0.0",
+  "description": "poc-docker-express-redis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeungHunBaek/poc-docker-express-redis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeungHunBaek/poc-docker-express-redis/issues"
+  },
+  "homepage": "https://github.com/SeungHunBaek/poc-docker-express-redis#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
