@@ -1,11 +1,13 @@
-version: "3"
+version: '3.3'
 
-services:
-  redis:
-    container_name: redis  
-    image: redis
-  node-app:
-    container_name: node-app
+services: 
+  container-node:
     build:
       context: ./
-      dockerfile: ./dockerfile
+      dockerfile: ./node/Dockerfile
+    image: container-node
+    ports:
+      - 3000:3000
+    working_dir: /app
+    volumes:
+      - ./:/app

@@ -1,22 +1,24 @@
 {
-  "name": "docker-express-redis",
+  "name": "docker",
   "version": "1.0.0",
-  "description": "poc-docker-express-redis",
+  "description": "Docker Test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SeungHunBaek/poc-docker-express-redis.git"
+    "url": "git+https://github.com/SeungHunBaek/Docker.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SeungHunBaek/poc-docker-express-redis/issues"
+    "url": "https://github.com/SeungHunBaek/Docker/issues"
   },
-  "homepage": "https://github.com/SeungHunBaek/poc-docker-express-redis#readme",
+  "homepage": "https://github.com/SeungHunBaek/Docker#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "redis": "^3.1.2"
   }
 }
